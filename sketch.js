@@ -39,25 +39,35 @@ function draw(){
     player.x = player.x+10;
   }
   if (isTouching(player,wall_1)) {
-    player.y = player.y+19;
+    //player.y = player.y+19;
+    player.collide(wall_1)
   }else if (isTouching(wall_2,player)) {
-    player.y = player.y+19;
+   // player.y = player.y+19;
+    player.collide(wall_2)
   }else if (isTouching(wall_3,player)) {
-    player.x = player.x+19;
+   // player.x = player.x+19;
+    player.collide(wall_3)
   }else if (isTouching(wall_4,player)) {
-    player.y = player.y-19;
+   // player.y = player.y-19;
+    player.collide(wall_4)
   }else if (isTouching(wall_5,player)) {
-    player.y = player.y-19;
+    //player.y = player.y-19;
+    player.collide(wall_5)
   }else if (isTouching(wall_6,player)) {
-    player.y = player.y+19;
+    //player.y = player.y+19;
+    player.collide(wall_6)
   }else if (isTouching(wall_7,player)) {
-    player.y = player.y-19;
+    //player.y = player.y-19;
+    player.collide(wall_7)
   }else if (isTouching(wall_8,player)) {
-    player.y = player.y+19;
+    //player.y = player.y+19;
+    player.collide(wall_8)
   }else if (isTouching(wall_9,player)) {
-    player.x = player.x+19;
+   // player.x = player.x+19;
+   player.collide(wall_9)
   }else if (isTouching(wall_10,player)) {
-    player.x = player.x-19;
+   // player.x = player.x-19;
+   player.collide(wall_10)
   }
   if (isTouching(prize,player)) {
     text("You won",100,250);
